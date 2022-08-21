@@ -21,6 +21,12 @@ p {
     margin-top: -10px;
 }
 
+#pw-length {
+    width: 75px;
+    height: 35px;
+    border-radius:6px;
+}
+
 button {
 margin-top: 30px;
 width: 191px;
@@ -36,6 +42,15 @@ border: transparent;
 border-radius: 6px;
 }
 
+#selections {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#select-messages {
+    margin-top: 20px;
+}
+
 hr {
     margin-top: 30px;
     border: 1px solid #2F3E53;
@@ -49,11 +64,11 @@ hr {
 }
 
 .pw-field {
-width: 211px;
+width: 100%;
+max-width: 211px;
 height: 30px;
 left: 52px;
 top: 396px;
-padding-top: 10px;
 
 background: #273549;
 border-radius: 6px;
@@ -64,4 +79,8 @@ color: #55F991;
 
 #pw-2 {
     margin-left: 24px;
+}
+
+#copy-message {
+    margin-top: 20px;
 }

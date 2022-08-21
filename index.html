@@ -9,14 +9,27 @@
         <p>Never use an insecure password again.</p>
         </header>
         
+        <input id="pw-length" type=number placeholder="Length" min="4" max="100"/>
         <button id="generate" onclick="populateFields()">Generate passwords</button>
         
+        <div id="selections">
+            <div id="checkboxes">
+            <input id="letters" type="checkbox" checked/> Letters
+            <input id="numbers" type="checkbox" checked/> Numbers
+            <input id="symbols" type="checkbox" checked/> Symbols
+            </div>
+            <div id="select-messages">
+            <p>Minimum length: 4. Maximum length: 100. Recommended: >= 16.</p>
+            <p id="minimum-check"></p>
+            </div>
         <hr/>
         
         <div id="pw-fields">
-        <div class="pw-field" id="pw-1"></div>
-        <div class="pw-field" id="pw-2"></div>
+        <textarea class="pw-field" id="pw-1" onclick="copyToClipboard('pw-1')" readonly></textarea>
+        <textarea class="pw-field" id="pw-2" onclick="copyToClipboard('pw-2')" readonly></textarea>
         </div>
+        
+        <p id="copy-message"></p>
         
         <script src="index.js"></script>
         </div>
